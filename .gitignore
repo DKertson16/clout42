@@ -22,3 +22,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+/src/pb/pb_data/
+/src/pb/pb_migrations/
