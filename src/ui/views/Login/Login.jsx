@@ -10,19 +10,26 @@ import {
   Heading,
   Image,
   useColorModeValue,
+  Spinner,
 } from '@chakra-ui/react'
 import { pb } from '../../pocketbase.js'
-import { useBearStore } from '../../store/store.js'
+import { usePersistedStore } from '../../store/store.js'
+import { redirect, useNavigate } from 'react-router-dom'
 
 function Login() {
-  const setUser = useBearStore((state) => state.setUser)
+  const navigate = useNavigate()
+  const setUser = usePersistedStore((state) => state.setUser)
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
+  const [isLoggingIn, setIsLoggingIn] = useState(false)
 
-  async function login() {
+  async function login(e) {
+    e.preventDefault()
+    setIsLoggingIn(true)
     try {
       await pb.collection('users').authWithPassword(username, password)
       setUser(pb.authStore.model)
+      navigate('/', { replace: true })
     } catch (e) {
       console.log(e)
     }
@@ -49,7 +56,7 @@ function Login() {
           p={8}
         >
           <Stack spacing={4}>
-            <form>
+            <form onSubmit={login}>
               <FormControl isRequired id="email">
                 <FormLabel>Username</FormLabel>
                 <Input
@@ -70,18 +77,23 @@ function Login() {
                   align={'start'}
                   justify={'space-between'}
                 ></Stack>
-                <Button
-                  onClick={login}
-                  type="submit"
-                  disabled={!username || !password}
-                  bg={'blue.400'}
-                  color={'white'}
-                  _hover={{
-                    bg: 'blue.500',
-                  }}
-                >
-                  Sign in
-                </Button>
+                {isLoggingIn ? (
+                  <Button bg={'blue.400'}>
+                    <Spinner />
+                  </Button>
+                ) : (
+                  <Button
+                    type="submit"
+                    disabled={!username || !password}
+                    bg={'blue.400'}
+                    color={'white'}
+                    _hover={{
+                      bg: 'blue.500',
+                    }}
+                  >
+                    Sign in
+                  </Button>
+                )}
               </Stack>
             </form>
           </Stack>

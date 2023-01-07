@@ -1,17 +1,17 @@
-import React, { useEffect } from 'react'
-import NavBar from './NavBar/NavBar.jsx'
-import { Box } from '@chakra-ui/react'
-import { fetchUpcomingOdds } from '../../store/helpers.js'
+import React, { useEffect, useState } from 'react'
+import NavBar from './NavBar.jsx'
+import UpcomingSports from './UpcomingSports/UpcomingSports'
+import { useBearStore } from '../../store/store.js'
 
 function BookApp() {
-  useEffect(() => {
-    fetchUpcomingOdds()
-  }, [])
+  const showContinueButton = useBearStore(
+    (state) => state.selectedSports,
+  ).length
 
   return (
     <>
-      <NavBar />
-      <Box>main content</Box>
+      <NavBar showContinueButton={showContinueButton} />
+      <UpcomingSports />
     </>
   )
 }

@@ -1,13 +1,31 @@
 import create from 'zustand'
-import { mountStoreDevtool } from 'simple-zustand-devtools'
+import { devtools, persist } from 'zustand/middleware'
 
-export const useBearStore = create((set) => ({
-  user: null,
-  setUser: (user) => set(() => ({ user })),
-  sports: null,
+const store = (set) => ({
+  sports: {},
   setSports: (sports) => set(() => ({ sports })),
+
   upcomingOdds: null,
   setUpcomingOdds: (upcomingOdds) => set(() => ({ upcomingOdds })),
-}))
 
-mountStoreDevtool('Store', useBearStore)
+  selectedSports: [],
+  addSelectedSport: (selectedSport) =>
+    set((state) => ({
+      selectedSports: [...state.selectedSports, selectedSport],
+    })),
+  deleteSelectedSport: (selectedSport) =>
+    set((state) => ({
+      selectedSports: state.selectedSports.filter(
+        (sport) => sport !== selectedSport,
+      ),
+    })),
+  clearSelectedSports: () => set((state) => ({ selectedSports: [] })),
+})
+
+const persistedStore = (set) => ({
+  user: null,
+  setUser: (user) => set(() => ({ user })),
+})
+
+export const useBearStore = create(devtools(store))
+export const usePersistedStore = create(devtools(persist(persistedStore)))
