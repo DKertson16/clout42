@@ -1,98 +1,139 @@
-import React, { useEffect } from 'react'
+import React, { useState } from 'react'
 import NavBar from '../NavBar.jsx'
 import { useBearStore } from '../../../store/store.js'
-import { Navigate, redirect, useLocation } from 'react-router-dom'
+import { Navigate } from 'react-router-dom'
 import { useQuery } from 'react-query'
-import {
-  fetchStandardOdds,
-  getStandardOddsData,
-} from '../../../store/helpers.js'
+import { fetchStandardOdds } from '../../../store/helpers.js'
 import LoadingPage from '../../LoadingPage/LoadingPage.jsx'
 import {
   Box,
   Card,
   CardBody,
-  Flex,
+  Divider,
   Grid,
   GridItem,
   Heading,
   Text,
+  useDisclosure,
 } from '@chakra-ui/react'
 import OddsCard from '../components/OddsCard.jsx'
+import { format } from 'date-fns'
+import BetModal from '../components/BetModal.jsx'
 
 function Odds() {
   const selectedSports = useBearStore((state) => state.selectedSports)
   if (!selectedSports.length) return <Navigate to="/" />
+
   const {
     data: standardOdds,
     isLoading,
     isError,
+    refetch,
+    isRefetching,
   } = useQuery('standard-odds', () => fetchStandardOdds(selectedSports))
+  const { isOpen, onOpen, onClose } = useDisclosure()
+  const [selectedBetOdds, setSelectedBetOdds] = useState({})
 
-  if (isLoading) return <LoadingPage />
+  const onBetClick = async (gameOdds, team, betType) => {
+    const betObj = {
+      bet_type: betType,
+      team,
+      home_team_name: gameOdds.home_team.team_name,
+      away_team_name: gameOdds.away_team.team_name,
+      game_id: gameOdds.id,
+      commence_time: gameOdds.commence_time,
+      sport_title: gameOdds.sport_title,
+      sport_key: gameOdds.sport_key,
+      odds: { ...gameOdds[team][betType], team_name: gameOdds[team].team_name },
+    }
+    setSelectedBetOdds(betObj)
+    onOpen()
+  }
+
+  if (isLoading || isRefetching)
+    return (
+      <>
+        <NavBar />
+        <LoadingPage />
+      </>
+    )
 
   return (
     <>
       <NavBar />
       {standardOdds.map((sportsOddsArr) => (
-        <>
-          <Heading size="lg">{sportsOddsArr[0].sport_title}</Heading>
+        <Box
+          key={sportsOddsArr[0].sport_title}
+          backgroundColor="blackAlpha.500"
+        >
+          <Heading color="blue.900" py={3} textAlign="center" size="xl">
+            {sportsOddsArr[0].sport_title}
+          </Heading>
           {sportsOddsArr.map((gameOdds) => {
-            const oddsData = getStandardOddsData(gameOdds)
-            const { home_team, away_team } = gameOdds
+            const teams = {
+              home_team: gameOdds.home_team.team_name,
+              away_team: gameOdds.away_team.team_name,
+            }
             return (
-              <Box m={2} key={oddsData.id}>
+              <Box p={1} key={gameOdds.id}>
                 <Card backgroundColor="gray.50">
                   <CardBody>
+                    <Text fontWeight="bold" as="i">{`${format(
+                      new Date(gameOdds.commence_time),
+                      'E p',
+                    )}`}</Text>
+                    <Text fontSize="lg">{`${teams.away_team} @ ${teams.home_team}`}</Text>
+                    <Divider my={3} />
                     <Grid templateColumns="repeat(4, 1fr)" gap="6">
-                      <GridItem my="auto">{home_team}</GridItem>
-                      <GridItem>
-                        <OddsCard
-                          point={oddsData[home_team].spreads?.point}
-                          price={oddsData[home_team].spreads?.price}
-                        />
-                      </GridItem>
-                      <GridItem>
-                        <OddsCard
-                          point={oddsData[home_team].totals?.point}
-                          price={oddsData[home_team].totals?.price}
-                          totalOutcomeName="Over"
-                        />
-                      </GridItem>
-                      <GridItem>
-                        <OddsCard
-                          point={oddsData[home_team].h2h?.point}
-                          price={oddsData[home_team].h2h?.price}
-                        />
-                      </GridItem>
-                      <GridItem my="auto">{away_team}</GridItem>
-                      <GridItem>
-                        <OddsCard
-                          point={oddsData[away_team].spreads?.point}
-                          price={oddsData[away_team].spreads?.price}
-                        />
-                      </GridItem>
-                      <GridItem>
-                        <OddsCard
-                          point={oddsData[away_team].totals?.point}
-                          price={oddsData[away_team].totals?.price}
-                          totalOutcomeName="Under"
-                        />
-                      </GridItem>
-                      <GridItem>
-                        <OddsCard
-                          point={oddsData[away_team].h2h?.point}
-                          price={oddsData[away_team].h2h?.price}
-                        />
-                      </GridItem>
+                      {['home_team', 'away_team'].map((team) => (
+                        <React.Fragment key={team}>
+                          <GridItem my="auto">{teams[team]}</GridItem>
+                          <GridItem>
+                            <OddsCard
+                              point={gameOdds[team].spreads?.point}
+                              price={gameOdds[team].spreads?.price}
+                              onClick={() =>
+                                onBetClick(gameOdds, team, 'spreads')
+                              }
+                            />
+                          </GridItem>
+                          <GridItem>
+                            <OddsCard
+                              point={gameOdds[team].totals?.point}
+                              price={gameOdds[team].totals?.price}
+                              totalOutcomeName={
+                                team === 'home_team' ? 'Over' : 'Under'
+                              }
+                              onClick={() =>
+                                onBetClick(gameOdds, team, 'totals')
+                              }
+                            />
+                          </GridItem>
+                          <GridItem>
+                            <OddsCard
+                              point={gameOdds[team].h2h?.point}
+                              price={gameOdds[team].h2h?.price}
+                              onClick={() => onBetClick(gameOdds, team, 'h2h')}
+                            />
+                          </GridItem>
+                        </React.Fragment>
+                      ))}
                     </Grid>
                   </CardBody>
                 </Card>
               </Box>
             )
           })}
-        </>
+        </Box>
       ))}
+
+      {isOpen && (
+        <BetModal
+          isOpen={isOpen}
+          onClose={onClose}
+          gameOdds={selectedBetOdds}
+        />
+      )}
     </>
   )
 }

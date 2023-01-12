@@ -13,6 +13,7 @@
     "@chakra-ui/react": "^2.4.5",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "date-fns": "^2.29.3",
     "framer-motion": "^8.0.2",
     "localforage": "^1.10.0",
     "lodash": "^4.17.21",

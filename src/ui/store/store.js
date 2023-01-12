@@ -22,10 +22,10 @@ const store = (set) => ({
   clearSelectedSports: () => set((state) => ({ selectedSports: [] })),
 })
 
-const persistedStore = (set) => ({
-  user: null,
-  setUser: (user) => set(() => ({ user })),
-})
+// const persistedStore = (set) => ({
+//   user: null,
+//   setUser: (user) => set(() => ({ user })),
+// })
 
 export const useBearStore = create(devtools(store))
-export const usePersistedStore = create(devtools(persist(persistedStore)))
+// export const usePersistedStore = create(devtools(persist(persistedStore)))

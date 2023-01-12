@@ -1,579 +1,423 @@
 [
   [
     {
-      "id": "a167e59388517f9ee708abbedbd00167",
+      "id": "e89eccafe1293550e08839ee747eae56",
       "sport_key": "basketball_nba",
       "sport_title": "NBA",
-      "commence_time": "2023-01-06T00:10:00Z",
-      "home_team": "Orlando Magic",
-      "away_team": "Memphis Grizzlies",
-      "bookmakers": [
-        {
-          "key": "draftkings",
-          "title": "DraftKings",
-          "last_update": "2023-01-05T23:53:54Z",
-          "markets": [
-            {
-              "key": "h2h",
-              "last_update": "2023-01-05T23:53:54Z",
-              "outcomes": [
-                {
-                  "name": "Memphis Grizzlies",
-                  "price": -260
-                },
-                {
-                  "name": "Orlando Magic",
-                  "price": 220
-                }
-              ]
-            },
-            {
-              "key": "spreads",
-              "last_update": "2023-01-05T23:53:54Z",
-              "outcomes": [
-                {
-                  "name": "Memphis Grizzlies",
-                  "price": -110,
-                  "point": -7
-                },
-                {
-                  "name": "Orlando Magic",
-                  "price": -110,
-                  "point": 7
-                }
-              ]
-            },
-            {
-              "key": "totals",
-              "last_update": "2023-01-05T23:53:54Z",
-              "outcomes": [
-                {
-                  "name": "Over",
-                  "price": -110,
-                  "point": 230.5
-                },
-                {
-                  "name": "Under",
-                  "price": -110,
-                  "point": 230.5
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "af6d898c1a739b4e27bf1b7ad948517b",
-      "sport_key": "basketball_nba",
-      "sport_title": "NBA",
-      "commence_time": "2023-01-06T00:30:00Z",
-      "home_team": "Dallas Mavericks",
-      "away_team": "Boston Celtics",
-      "bookmakers": [
-        {
-          "key": "draftkings",
-          "title": "DraftKings",
-          "last_update": "2023-01-05T23:53:54Z",
-          "markets": [
-            {
-              "key": "h2h",
-              "last_update": "2023-01-05T23:53:54Z",
-              "outcomes": [
-                {
-                  "name": "Boston Celtics",
-                  "price": -150
-                },
-                {
-                  "name": "Dallas Mavericks",
-                  "price": 130
-                }
-              ]
-            },
-            {
-              "key": "spreads",
-              "last_update": "2023-01-05T23:53:54Z",
-              "outcomes": [
-                {
-                  "name": "Boston Celtics",
-                  "price": -110,
-                  "point": -3
-                },
-                {
-                  "name": "Dallas Mavericks",
-                  "price": -110,
-                  "point": 3
-                }
-              ]
-            },
-            {
-              "key": "totals",
-              "last_update": "2023-01-05T23:53:54Z",
-              "outcomes": [
-                {
-                  "name": "Over",
-                  "price": -110,
-                  "point": 233
-                },
-                {
-                  "name": "Under",
-                  "price": -110,
-                  "point": 233
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "a8b72d430e4aab50ad04f4f7117dfcd7",
-      "sport_key": "basketball_nba",
-      "sport_title": "NBA",
-      "commence_time": "2023-01-06T01:10:00Z",
-      "home_team": "Houston Rockets",
-      "away_team": "Utah Jazz",
-      "bookmakers": [
-        {
-          "key": "draftkings",
-          "title": "DraftKings",
-          "last_update": "2023-01-05T23:53:54Z",
-          "markets": [
-            {
-              "key": "h2h",
-              "last_update": "2023-01-05T23:53:54Z",
-              "outcomes": [
-                {
-                  "name": "Houston Rockets",
-                  "price": 230
-                },
-                {
-                  "name": "Utah Jazz",
-                  "price": -275
-                }
-              ]
-            },
-            {
-              "key": "spreads",
-              "last_update": "2023-01-05T23:53:54Z",
-              "outcomes": [
-                {
-                  "name": "Houston Rockets",
-                  "price": -110,
-                  "point": 7
-                },
-                {
-                  "name": "Utah Jazz",
-                  "price": -110,
-                  "point": -7
-                }
-              ]
-            },
-            {
-              "key": "totals",
-              "last_update": "2023-01-05T23:53:54Z",
-              "outcomes": [
-                {
-                  "name": "Over",
-                  "price": -110,
-                  "point": 231.5
-                },
-                {
-                  "name": "Under",
-                  "price": -110,
-                  "point": 231.5
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "0b74ba494561a80aff9876cca0ffcf83",
-      "sport_key": "basketball_nba",
-      "sport_title": "NBA",
-      "commence_time": "2023-01-06T03:00:00Z",
-      "home_team": "Denver Nuggets",
-      "away_team": "Los Angeles Clippers",
-      "bookmakers": [
-        {
-          "key": "draftkings",
-          "title": "DraftKings",
-          "last_update": "2023-01-05T23:53:54Z",
-          "markets": [
-            {
-              "key": "h2h",
-              "last_update": "2023-01-05T23:53:54Z",
-              "outcomes": [
-                {
-                  "name": "Denver Nuggets",
-                  "price": -225
-                },
-                {
-                  "name": "Los Angeles Clippers",
-                  "price": 190
-                }
-              ]
-            },
-            {
-              "key": "spreads",
-              "last_update": "2023-01-05T23:53:54Z",
-              "outcomes": [
-                {
-                  "name": "Denver Nuggets",
-                  "price": -110,
-                  "point": -6
-                },
-                {
-                  "name": "Los Angeles Clippers",
-                  "price": -110,
-                  "point": 6
-                }
-              ]
-            },
-            {
-              "key": "totals",
-              "last_update": "2023-01-05T23:53:54Z",
-              "outcomes": [
-                {
-                  "name": "Over",
-                  "price": -110,
-                  "point": 229
-                },
-                {
-                  "name": "Under",
-                  "price": -110,
-                  "point": 229
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "10a8bea7847d123de40961c591ef296f",
-      "sport_key": "basketball_nba",
-      "sport_title": "NBA",
-      "commence_time": "2023-01-07T00:10:00Z",
-      "home_team": "Philadelphia 76ers",
-      "away_team": "Chicago Bulls",
-      "bookmakers": [
-        {
-          "key": "draftkings",
-          "title": "DraftKings",
-          "last_update": "2023-01-05T23:53:54Z",
-          "markets": [
-            {
-              "key": "h2h",
-              "last_update": "2023-01-05T23:53:54Z",
-              "outcomes": [
-                {
-                  "name": "Chicago Bulls",
-                  "price": 160
-                },
-                {
-                  "name": "Philadelphia 76ers",
-                  "price": -190
-                }
-              ]
-            },
-            {
-              "key": "spreads",
-              "last_update": "2023-01-05T23:53:54Z",
-              "outcomes": [
-                {
-                  "name": "Chicago Bulls",
-                  "price": -110,
-                  "point": 4.5
-                },
-                {
-                  "name": "Philadelphia 76ers",
-                  "price": -110,
-                  "point": -4.5
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "8dd697da51b0f58c6603b24cd5f4a643",
-      "sport_key": "basketball_nba",
-      "sport_title": "NBA",
-      "commence_time": "2023-01-07T00:10:00Z",
-      "home_team": "Indiana Pacers",
-      "away_team": "Portland Trail Blazers",
-      "bookmakers": [
-        {
-          "key": "draftkings",
-          "title": "DraftKings",
-          "last_update": "2023-01-05T23:53:54Z",
-          "markets": [
-            {
-              "key": "h2h",
-              "last_update": "2023-01-05T23:53:54Z",
-              "outcomes": [
-                {
-                  "name": "Indiana Pacers",
-                  "price": -115
-                },
-                {
-                  "name": "Portland Trail Blazers",
-                  "price": -105
-                }
-              ]
-            },
-            {
-              "key": "spreads",
-              "last_update": "2023-01-05T23:53:54Z",
-              "outcomes": [
-                {
-                  "name": "Indiana Pacers",
-                  "price": -110,
-                  "point": -1
-                },
-                {
-                  "name": "Portland Trail Blazers",
-                  "price": -110,
-                  "point": 1
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "5d0427f89cea3efd1d0c6ad9de028e0c",
-      "sport_key": "basketball_nba",
-      "sport_title": "NBA",
-      "commence_time": "2023-01-07T00:40:00Z",
-      "home_team": "New Orleans Pelicans",
+      "commence_time": "2023-01-08T23:10:00Z",
+      "home_team": "Miami Heat",
       "away_team": "Brooklyn Nets",
       "bookmakers": [
         {
           "key": "draftkings",
           "title": "DraftKings",
-          "last_update": "2023-01-05T23:53:54Z",
+          "last_update": "2023-01-09T00:41:03Z",
           "markets": [
             {
               "key": "h2h",
-              "last_update": "2023-01-05T23:53:54Z",
+              "last_update": "2023-01-09T00:41:03Z",
               "outcomes": [
                 {
                   "name": "Brooklyn Nets",
-                  "price": -200
+                  "price": -165
                 },
                 {
-                  "name": "New Orleans Pelicans",
+                  "name": "Miami Heat",
+                  "price": 135
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2023-01-09T00:41:03Z",
+              "outcomes": [
+                {
+                  "name": "Brooklyn Nets",
+                  "price": -110,
+                  "point": -2.5
+                },
+                {
+                  "name": "Miami Heat",
+                  "price": -120,
+                  "point": 2.5
+                }
+              ]
+            },
+            {
+              "key": "totals",
+              "last_update": "2023-01-09T00:41:03Z",
+              "outcomes": [
+                {
+                  "name": "Over",
+                  "price": -120,
+                  "point": 220.5
+                },
+                {
+                  "name": "Under",
+                  "price": -110,
+                  "point": 220.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "609c46b605d3487564080b7431e287bb",
+      "sport_key": "basketball_nba",
+      "sport_title": "NBA",
+      "commence_time": "2023-01-08T23:10:00Z",
+      "home_team": "Memphis Grizzlies",
+      "away_team": "Utah Jazz",
+      "bookmakers": [
+        {
+          "key": "draftkings",
+          "title": "DraftKings",
+          "last_update": "2023-01-09T00:41:03Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2023-01-09T00:41:03Z",
+              "outcomes": [
+                {
+                  "name": "Memphis Grizzlies",
+                  "price": -355
+                },
+                {
+                  "name": "Utah Jazz",
+                  "price": 275
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2023-01-09T00:41:03Z",
+              "outcomes": [
+                {
+                  "name": "Memphis Grizzlies",
+                  "price": -115,
+                  "point": -6.5
+                },
+                {
+                  "name": "Utah Jazz",
+                  "price": -115,
+                  "point": 6.5
+                }
+              ]
+            },
+            {
+              "key": "totals",
+              "last_update": "2023-01-09T00:41:03Z",
+              "outcomes": [
+                {
+                  "name": "Over",
+                  "price": -110,
+                  "point": 241.5
+                },
+                {
+                  "name": "Under",
+                  "price": -120,
+                  "point": 241.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6324883af4ea32bd849343c69433b9f4",
+      "sport_key": "basketball_nba",
+      "sport_title": "NBA",
+      "commence_time": "2023-01-09T00:10:00Z",
+      "home_team": "Oklahoma City Thunder",
+      "away_team": "Dallas Mavericks",
+      "bookmakers": [
+        {
+          "key": "draftkings",
+          "title": "DraftKings",
+          "last_update": "2023-01-09T00:41:03Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2023-01-09T00:41:03Z",
+              "outcomes": [
+                {
+                  "name": "Dallas Mavericks",
+                  "price": 120
+                },
+                {
+                  "name": "Oklahoma City Thunder",
+                  "price": -150
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2023-01-09T00:41:03Z",
+              "outcomes": [
+                {
+                  "name": "Dallas Mavericks",
+                  "price": -125,
+                  "point": 3.5
+                },
+                {
+                  "name": "Oklahoma City Thunder",
+                  "price": -105,
+                  "point": -3.5
+                }
+              ]
+            },
+            {
+              "key": "totals",
+              "last_update": "2023-01-09T00:41:03Z",
+              "outcomes": [
+                {
+                  "name": "Over",
+                  "price": -110,
+                  "point": 237.5
+                },
+                {
+                  "name": "Under",
+                  "price": -120,
+                  "point": 237.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "53e214590d276b06d4e12fa27e22cdd9",
+      "sport_key": "basketball_nba",
+      "sport_title": "NBA",
+      "commence_time": "2023-01-09T00:10:00Z",
+      "home_team": "Houston Rockets",
+      "away_team": "Minnesota Timberwolves",
+      "bookmakers": [
+        {
+          "key": "draftkings",
+          "title": "DraftKings",
+          "last_update": "2023-01-09T00:41:03Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2023-01-09T00:41:03Z",
+              "outcomes": [
+                {
+                  "name": "Houston Rockets",
+                  "price": -210
+                },
+                {
+                  "name": "Minnesota Timberwolves",
                   "price": 170
                 }
               ]
             },
             {
               "key": "spreads",
-              "last_update": "2023-01-05T23:53:54Z",
+              "last_update": "2023-01-09T00:41:03Z",
               "outcomes": [
                 {
-                  "name": "Brooklyn Nets",
+                  "name": "Houston Rockets",
                   "price": -110,
-                  "point": -5
+                  "point": -4.5
                 },
+                {
+                  "name": "Minnesota Timberwolves",
+                  "price": -120,
+                  "point": 4.5
+                }
+              ]
+            },
+            {
+              "key": "totals",
+              "last_update": "2023-01-09T00:41:03Z",
+              "outcomes": [
+                {
+                  "name": "Over",
+                  "price": -110,
+                  "point": 238.5
+                },
+                {
+                  "name": "Under",
+                  "price": -120,
+                  "point": 238.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8424fb2db0f375478450868935669755",
+      "sport_key": "basketball_nba",
+      "sport_title": "NBA",
+      "commence_time": "2023-01-09T01:10:00Z",
+      "home_team": "Phoenix Suns",
+      "away_team": "Cleveland Cavaliers",
+      "bookmakers": [
+        {
+          "key": "draftkings",
+          "title": "DraftKings",
+          "last_update": "2023-01-09T00:41:03Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2023-01-09T00:41:03Z",
+              "outcomes": [
+                {
+                  "name": "Cleveland Cavaliers",
+                  "price": -225
+                },
+                {
+                  "name": "Phoenix Suns",
+                  "price": 190
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2023-01-09T00:41:03Z",
+              "outcomes": [
+                {
+                  "name": "Cleveland Cavaliers",
+                  "price": -110,
+                  "point": -6.0
+                },
+                {
+                  "name": "Phoenix Suns",
+                  "price": -110,
+                  "point": 6.0
+                }
+              ]
+            },
+            {
+              "key": "totals",
+              "last_update": "2023-01-09T00:41:03Z",
+              "outcomes": [
+                {
+                  "name": "Over",
+                  "price": -110,
+                  "point": 215.5
+                },
+                {
+                  "name": "Under",
+                  "price": -110,
+                  "point": 215.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a44dbec2ce93e1ce55167165e2012a0c",
+      "sport_key": "basketball_nba",
+      "sport_title": "NBA",
+      "commence_time": "2023-01-09T02:10:00Z",
+      "home_team": "Los Angeles Clippers",
+      "away_team": "Atlanta Hawks",
+      "bookmakers": [
+        {
+          "key": "draftkings",
+          "title": "DraftKings",
+          "last_update": "2023-01-09T00:41:03Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2023-01-09T00:41:03Z",
+              "outcomes": [
+                {
+                  "name": "Atlanta Hawks",
+                  "price": 125
+                },
+                {
+                  "name": "Los Angeles Clippers",
+                  "price": -145
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2023-01-09T00:41:03Z",
+              "outcomes": [
+                {
+                  "name": "Atlanta Hawks",
+                  "price": -105,
+                  "point": 2.5
+                },
+                {
+                  "name": "Los Angeles Clippers",
+                  "price": -115,
+                  "point": -2.5
+                }
+              ]
+            },
+            {
+              "key": "totals",
+              "last_update": "2023-01-09T00:41:03Z",
+              "outcomes": [
+                {
+                  "name": "Over",
+                  "price": -110,
+                  "point": 233.5
+                },
+                {
+                  "name": "Under",
+                  "price": -110,
+                  "point": 233.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ebbd270d4e807193d01e5f28023f3877",
+      "sport_key": "basketball_nba",
+      "sport_title": "NBA",
+      "commence_time": "2023-01-10T00:10:00Z",
+      "home_team": "Washington Wizards",
+      "away_team": "New Orleans Pelicans",
+      "bookmakers": [
+        {
+          "key": "draftkings",
+          "title": "DraftKings",
+          "last_update": "2023-01-09T00:41:03Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2023-01-09T00:41:03Z",
+              "outcomes": [
+                {
+                  "name": "New Orleans Pelicans",
+                  "price": -105
+                },
+                {
+                  "name": "Washington Wizards",
+                  "price": -115
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2023-01-09T00:41:03Z",
+              "outcomes": [
                 {
                   "name": "New Orleans Pelicans",
                   "price": -110,
-                  "point": 5
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "eec870235163add86e86c3b75e40c194",
-      "sport_key": "basketball_nba",
-      "sport_title": "NBA",
-      "commence_time": "2023-01-07T00:40:00Z",
-      "home_team": "Toronto Raptors",
-      "away_team": "New York Knicks",
-      "bookmakers": [
-        {
-          "key": "draftkings",
-          "title": "DraftKings",
-          "last_update": "2023-01-05T23:53:54Z",
-          "markets": [
-            {
-              "key": "h2h",
-              "last_update": "2023-01-05T23:53:54Z",
-              "outcomes": [
-                {
-                  "name": "New York Knicks",
-                  "price": 145
-                },
-                {
-                  "name": "Toronto Raptors",
-                  "price": -170
-                }
-              ]
-            },
-            {
-              "key": "spreads",
-              "last_update": "2023-01-05T23:53:54Z",
-              "outcomes": [
-                {
-                  "name": "New York Knicks",
-                  "price": -110,
-                  "point": 4
-                },
-                {
-                  "name": "Toronto Raptors",
-                  "price": -110,
-                  "point": -4
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "96541bf4220a73a6975430403e98fac7",
-      "sport_key": "basketball_nba",
-      "sport_title": "NBA",
-      "commence_time": "2023-01-07T01:10:00Z",
-      "home_team": "Milwaukee Bucks",
-      "away_team": "Charlotte Hornets",
-      "bookmakers": [
-        {
-          "key": "draftkings",
-          "title": "DraftKings",
-          "last_update": "2023-01-05T23:53:54Z",
-          "markets": [
-            {
-              "key": "h2h",
-              "last_update": "2023-01-05T23:53:54Z",
-              "outcomes": [
-                {
-                  "name": "Charlotte Hornets",
-                  "price": 440
-                },
-                {
-                  "name": "Milwaukee Bucks",
-                  "price": -580
-                }
-              ]
-            },
-            {
-              "key": "spreads",
-              "last_update": "2023-01-05T23:53:54Z",
-              "outcomes": [
-                {
-                  "name": "Charlotte Hornets",
-                  "price": -115,
-                  "point": 11.5
-                },
-                {
-                  "name": "Milwaukee Bucks",
-                  "price": -105,
-                  "point": -11.5
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "4b419828bcdbb061f18b4efe6efba614",
-      "sport_key": "basketball_nba",
-      "sport_title": "NBA",
-      "commence_time": "2023-01-07T01:10:00Z",
-      "home_team": "San Antonio Spurs",
-      "away_team": "Detroit Pistons",
-      "bookmakers": [
-        {
-          "key": "draftkings",
-          "title": "DraftKings",
-          "last_update": "2023-01-05T23:53:54Z",
-          "markets": [
-            {
-              "key": "h2h",
-              "last_update": "2023-01-05T23:53:54Z",
-              "outcomes": [
-                {
-                  "name": "Detroit Pistons",
-                  "price": -105
-                },
-                {
-                  "name": "San Antonio Spurs",
-                  "price": -115
-                }
-              ]
-            },
-            {
-              "key": "spreads",
-              "last_update": "2023-01-05T23:53:54Z",
-              "outcomes": [
-                {
-                  "name": "Detroit Pistons",
-                  "price": -110,
-                  "point": 1
-                },
-                {
-                  "name": "San Antonio Spurs",
-                  "price": -110,
-                  "point": -1
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "b0ffc0b093047af0570cf2d8b600f50b",
-      "sport_key": "basketball_nba",
-      "sport_title": "NBA",
-      "commence_time": "2023-01-07T01:10:00Z",
-      "home_team": "Oklahoma City Thunder",
-      "away_team": "Washington Wizards",
-      "bookmakers": [
-        {
-          "key": "draftkings",
-          "title": "DraftKings",
-          "last_update": "2023-01-05T23:53:54Z",
-          "markets": [
-            {
-              "key": "h2h",
-              "last_update": "2023-01-05T23:53:54Z",
-              "outcomes": [
-                {
-                  "name": "Oklahoma City Thunder",
-                  "price": -120
-                },
-                {
-                  "name": "Washington Wizards",
-                  "price": 100
-                }
-              ]
-            },
-            {
-              "key": "spreads",
-              "last_update": "2023-01-05T23:53:54Z",
-              "outcomes": [
-                {
-                  "name": "Oklahoma City Thunder",
-                  "price": -110,
-                  "point": -1
+                  "point": 1.5
                 },
                 {
                   "name": "Washington Wizards",
                   "price": -110,
-                  "point": 1
+                  "point": -1.5
                 }
               ]
             }
@@ -582,45 +426,186 @@
       ]
     },
     {
-      "id": "214bb45bddd51c6cc7f080ddc1995330",
+      "id": "50f7fccc4a1869fad37cae60e1867e99",
       "sport_key": "basketball_nba",
       "sport_title": "NBA",
-      "commence_time": "2023-01-07T03:10:00Z",
-      "home_team": "Phoenix Suns",
-      "away_team": "Miami Heat",
+      "commence_time": "2023-01-10T00:40:00Z",
+      "home_team": "Boston Celtics",
+      "away_team": "Chicago Bulls",
       "bookmakers": [
         {
           "key": "draftkings",
           "title": "DraftKings",
-          "last_update": "2023-01-05T23:53:54Z",
+          "last_update": "2023-01-09T00:41:03Z",
           "markets": [
             {
               "key": "h2h",
-              "last_update": "2023-01-05T23:53:54Z",
+              "last_update": "2023-01-09T00:41:03Z",
               "outcomes": [
                 {
-                  "name": "Miami Heat",
-                  "price": -115
+                  "name": "Boston Celtics",
+                  "price": -365
                 },
                 {
-                  "name": "Phoenix Suns",
-                  "price": -105
+                  "name": "Chicago Bulls",
+                  "price": 300
                 }
               ]
             },
             {
               "key": "spreads",
-              "last_update": "2023-01-05T23:53:54Z",
+              "last_update": "2023-01-09T00:41:03Z",
               "outcomes": [
                 {
-                  "name": "Miami Heat",
+                  "name": "Boston Celtics",
                   "price": -110,
-                  "point": -1
+                  "point": -8.0
                 },
                 {
-                  "name": "Phoenix Suns",
+                  "name": "Chicago Bulls",
                   "price": -110,
-                  "point": 1
+                  "point": 8.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fe1a44b9fd246ac0736caef5139c1e8f",
+      "sport_key": "basketball_nba",
+      "sport_title": "NBA",
+      "commence_time": "2023-01-10T00:40:00Z",
+      "home_team": "New York Knicks",
+      "away_team": "Milwaukee Bucks",
+      "bookmakers": [
+        {
+          "key": "draftkings",
+          "title": "DraftKings",
+          "last_update": "2023-01-09T00:41:03Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2023-01-09T00:41:03Z",
+              "outcomes": [
+                {
+                  "name": "Milwaukee Bucks",
+                  "price": -140
+                },
+                {
+                  "name": "New York Knicks",
+                  "price": 120
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2023-01-09T00:41:03Z",
+              "outcomes": [
+                {
+                  "name": "Milwaukee Bucks",
+                  "price": -110,
+                  "point": -2.5
+                },
+                {
+                  "name": "New York Knicks",
+                  "price": -110,
+                  "point": 2.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1762c20dc45010e8956083fe3c5800d7",
+      "sport_key": "basketball_nba",
+      "sport_title": "NBA",
+      "commence_time": "2023-01-10T02:10:00Z",
+      "home_team": "Denver Nuggets",
+      "away_team": "Los Angeles Lakers",
+      "bookmakers": [
+        {
+          "key": "draftkings",
+          "title": "DraftKings",
+          "last_update": "2023-01-09T00:41:03Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2023-01-09T00:41:03Z",
+              "outcomes": [
+                {
+                  "name": "Denver Nuggets",
+                  "price": -410
+                },
+                {
+                  "name": "Los Angeles Lakers",
+                  "price": 330
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2023-01-09T00:41:03Z",
+              "outcomes": [
+                {
+                  "name": "Denver Nuggets",
+                  "price": -110,
+                  "point": -8.5
+                },
+                {
+                  "name": "Los Angeles Lakers",
+                  "price": -110,
+                  "point": 8.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "646c1f4d84b5298c5c1469b91ef1075c",
+      "sport_key": "basketball_nba",
+      "sport_title": "NBA",
+      "commence_time": "2023-01-10T03:10:00Z",
+      "home_team": "Sacramento Kings",
+      "away_team": "Orlando Magic",
+      "bookmakers": [
+        {
+          "key": "draftkings",
+          "title": "DraftKings",
+          "last_update": "2023-01-09T00:41:03Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2023-01-09T00:41:03Z",
+              "outcomes": [
+                {
+                  "name": "Orlando Magic",
+                  "price": 200
+                },
+                {
+                  "name": "Sacramento Kings",
+                  "price": -240
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2023-01-09T00:41:03Z",
+              "outcomes": [
+                {
+                  "name": "Orlando Magic",
+                  "price": -110,
+                  "point": 6.0
+                },
+                {
+                  "name": "Sacramento Kings",
+                  "price": -110,
+                  "point": -6.0
                 }
               ]
             }
@@ -664,12 +649,12 @@
                 {
                   "name": "Kansas City Chiefs",
                   "price": -110,
-                  "point": -9
+                  "point": -9.0
                 },
                 {
                   "name": "Las Vegas Raiders",
                   "price": -110,
-                  "point": 9
+                  "point": 9.0
                 }
               ]
             },
@@ -680,12 +665,12 @@
                 {
                   "name": "Over",
                   "price": -115,
-                  "point": 52
+                  "point": 52.0
                 },
                 {
                   "name": "Under",
                   "price": -105,
-                  "point": 52
+                  "point": 52.0
                 }
               ]
             }
@@ -743,12 +728,12 @@
                 {
                   "name": "Over",
                   "price": -110,
-                  "point": 40
+                  "point": 40.0
                 },
                 {
                   "name": "Under",
                   "price": -110,
-                  "point": 40
+                  "point": 40.0
                 }
               ]
             }
@@ -853,12 +838,12 @@
                 {
                   "name": "Baltimore Ravens",
                   "price": -110,
-                  "point": 7
+                  "point": 7.0
                 },
                 {
                   "name": "Cincinnati Bengals",
                   "price": -110,
-                  "point": -7
+                  "point": -7.0
                 }
               ]
             },
@@ -916,12 +901,12 @@
                 {
                   "name": "Buffalo Bills",
                   "price": -110,
-                  "point": -7
+                  "point": -7.0
                 },
                 {
                   "name": "New England Patriots",
                   "price": -110,
-                  "point": 7
+                  "point": 7.0
                 }
               ]
             },
@@ -995,12 +980,12 @@
                 {
                   "name": "Over",
                   "price": -110,
-                  "point": 42
+                  "point": 42.0
                 },
                 {
                   "name": "Under",
                   "price": -110,
-                  "point": 42
+                  "point": 42.0
                 }
               ]
             }
@@ -1058,12 +1043,12 @@
                 {
                   "name": "Over",
                   "price": -110,
-                  "point": 43
+                  "point": 43.0
                 },
                 {
                   "name": "Under",
                   "price": -110,
-                  "point": 43
+                  "point": 43.0
                 }
               ]
             }
@@ -1184,12 +1169,12 @@
                 {
                   "name": "Over",
                   "price": -115,
-                  "point": 38
+                  "point": 38.0
                 },
                 {
                   "name": "Under",
                   "price": -105,
-                  "point": 38
+                  "point": 38.0
                 }
               ]
             }
@@ -1294,12 +1279,12 @@
                 {
                   "name": "Arizona Cardinals",
                   "price": -110,
-                  "point": 14
+                  "point": 14.0
                 },
                 {
                   "name": "San Francisco 49ers",
                   "price": -110,
-                  "point": -14
+                  "point": -14.0
                 }
               ]
             },
@@ -1357,12 +1342,12 @@
                 {
                   "name": "Dallas Cowboys",
                   "price": -110,
-                  "point": -7
+                  "point": -7.0
                 },
                 {
                   "name": "Washington Commanders",
                   "price": -110,
-                  "point": 7
+                  "point": 7.0
                 }
               ]
             },
@@ -1373,12 +1358,12 @@
                 {
                   "name": "Over",
                   "price": -110,
-                  "point": 41
+                  "point": 41.0
                 },
                 {
                   "name": "Under",
                   "price": -110,
-                  "point": 41
+                  "point": 41.0
                 }
               ]
             }
@@ -1436,12 +1421,12 @@
                 {
                   "name": "Over",
                   "price": -110,
-                  "point": 40
+                  "point": 40.0
                 },
                 {
                   "name": "Under",
                   "price": -110,
-                  "point": 40
+                  "point": 40.0
                 }
               ]
             }
@@ -1483,12 +1468,12 @@
                 {
                   "name": "Los Angeles Rams",
                   "price": -110,
-                  "point": 6
+                  "point": 6.0
                 },
                 {
                   "name": "Seattle Seahawks",
                   "price": -110,
-                  "point": -6
+                  "point": -6.0
                 }
               ]
             },
@@ -1546,12 +1531,12 @@
                 {
                   "name": "New York Giants",
                   "price": -110,
-                  "point": 14
+                  "point": 14.0
                 },
                 {
                   "name": "Philadelphia Eagles",
                   "price": -110,
-                  "point": -14
+                  "point": -14.0
                 }
               ]
             },
@@ -1562,12 +1547,12 @@
                 {
                   "name": "Over",
                   "price": -110,
-                  "point": 43
+                  "point": 43.0
                 },
                 {
                   "name": "Under",
                   "price": -110,
-                  "point": 43
+                  "point": 43.0
                 }
               ]
             }
@@ -1625,12 +1610,12 @@
                 {
                   "name": "Over",
                   "price": -110,
-                  "point": 49
+                  "point": 49.0
                 },
                 {
                   "name": "Under",
                   "price": -110,
-                  "point": 49
+                  "point": 49.0
                 }
               ]
             }

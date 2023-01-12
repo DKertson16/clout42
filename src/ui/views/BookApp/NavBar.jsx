@@ -18,12 +18,11 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon, CloseIcon, ArrowForwardIcon } from '@chakra-ui/icons'
 import { pb } from '../../pocketbase.js'
-import { useBearStore, usePersistedStore } from '../../store/store.js'
+import { useBearStore } from '../../store/store.js'
 import { Link as RouterLink, useNavigate } from 'react-router-dom'
 
 function NavBar({ showContinueButton = false }) {
   const navigate = useNavigate()
-  const setUser = usePersistedStore((state) => state.setUser)
   const selectedSports = useBearStore((state) => state.selectedSports)
   const Links = ['Dashboard', 'Projects', 'Team', 'Chillin']
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -47,14 +46,19 @@ function NavBar({ showContinueButton = false }) {
   )
 
   function logout() {
-    setUser(null)
     pb.authStore.clear()
     navigate('/login')
   }
 
   return (
     <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+      <Box
+        position="sticky"
+        top={0}
+        zIndex={1}
+        bg={useColorModeValue('gray.100', 'gray.900')}
+        px={4}
+      >
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}

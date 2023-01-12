@@ -13,12 +13,12 @@ import {
   Spinner,
 } from '@chakra-ui/react'
 import { pb } from '../../pocketbase.js'
-import { usePersistedStore } from '../../store/store.js'
 import { redirect, useNavigate } from 'react-router-dom'
+import { useMutation } from 'react-query'
+import { login } from '../../helpers.js'
 
 function Login() {
   const navigate = useNavigate()
-  const setUser = usePersistedStore((state) => state.setUser)
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const [isLoggingIn, setIsLoggingIn] = useState(false)
@@ -28,7 +28,6 @@ function Login() {
     setIsLoggingIn(true)
     try {
       await pb.collection('users').authWithPassword(username, password)
-      setUser(pb.authStore.model)
       navigate('/', { replace: true })
     } catch (e) {
       console.log(e)

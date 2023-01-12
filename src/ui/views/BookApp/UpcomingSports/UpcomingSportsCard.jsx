@@ -9,11 +9,21 @@ import {
   useDisclosure,
 } from '@chakra-ui/react'
 import { useBearStore } from '../../../store/store.js'
+import { ChevronDownIcon } from '@chakra-ui/icons'
 
 function UpcomingSportsCard({ sport, leagues }) {
   const { isOpen, onToggle } = useDisclosure()
   const addSelectedSport = useBearStore((state) => state.addSelectedSport)
   const deleteSelectedSport = useBearStore((state) => state.deleteSelectedSport)
+  const [chevronArrowRotation, setChevronArrowRotation] = useState('')
+
+  const expandOptions = () => {
+    onToggle()
+    setChevronArrowRotation((state) => {
+      if (state) return ''
+      else return 'rotate(180deg)'
+    })
+  }
 
   const toggleCheckbox = (isChecked, key) => {
     if (isChecked) {
@@ -25,10 +35,22 @@ function UpcomingSportsCard({ sport, leagues }) {
 
   return (
     <Box my={2}>
-      <Text onClick={onToggle} cursor="pointer" fontSize="xl" ml={3}>
-        {sport}
-      </Text>
-      <Text>down</Text>
+      <Flex
+        justifyContent="space-between"
+        onClick={expandOptions}
+        cursor="pointer"
+      >
+        <Text fontSize="xl" ml={3}>
+          {sport}
+        </Text>
+        <ChevronDownIcon
+          transition="all .3s ease"
+          transform={chevronArrowRotation}
+          my="auto"
+          mr="5"
+          boxSize={6}
+        />
+      </Flex>
       <Collapse in={isOpen} animateOpacity>
         <Flex ml={5} my={2} flexDirection="column" rowGap={2}>
           {leagues.map((league) => (
